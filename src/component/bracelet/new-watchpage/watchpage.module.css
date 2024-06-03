@@ -1,0 +1,223 @@
+.container {
+    height: 75vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.videocontainer {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    position: absolute;
+}
+
+.videocontainer video {
+    width: 100vw;
+}
+
+.frontText {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: absolute;
+}
+
+
+.btn button {
+    font-size: 17px;
+    font-weight: 700;
+    height: 40px;
+    width: 170px;
+    background: rgba(63, 60, 60, 0.404);
+    filter: blur(50%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: white;
+}
+
+.text {
+    text-align: center;
+    gap: 20px;
+}
+
+.frontText h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+}
+
+.frontText h1 {
+    font-size: 55px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.btn button {
+    font-size: 17px;
+    font-weight: 700;
+    height: 40px;
+    width: 170px;
+    background: rgba(255, 255, 255, 0.199);
+    backdrop-filter: blur(50px);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.videocontainer video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.exploreContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+
+
+.exploreContainer .expolre {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exploreContainer .expolre h1 {
+    font-size: 41px;
+    font-weight: 700;
+    color: #137146;
+}
+
+.exploreContainer .desc {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.exploreContainer .desc p {
+    width: 65%;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.exploreContainer .desc button {
+    background-color: transparent;
+    color: #137146;
+
+    font-size: 16px;
+    font-weight: 700;
+    width: 150px;
+    height: 30px;
+    border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .frontText h1 {
+        font-size: 34px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+
+    }
+
+    .exploreContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .exploreContainer .expolre {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .exploreContainer .expolre h1 {
+        font-size: 31px;
+        font-weight: 700;
+        color: #137146;
+
+    }
+
+    .exploreContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0px;
+        gap: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 950px) {
+    .exploreContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .title {
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: start;
+        display: flex;
+        /* background-color: red; */
+    }
+
+    .exploreContainer .desc {
+        padding: 0px 10px;
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        font-size: 19px;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: blue; */
+    }
+}

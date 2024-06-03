@@ -1,0 +1,41 @@
+.slide {
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.arrow {
+  border: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(60, 233, 224, 0.781);
+  border-radius: 50%;
+}
+
+.arrowPrev {
+  left: 30px;
+  /* transform: translateX(-30px); */
+}
+
+.arrowNext {
+  right: 30px;
+}

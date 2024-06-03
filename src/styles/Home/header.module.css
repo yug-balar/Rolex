@@ -1,0 +1,267 @@
+@font-face {
+    font-family: bold;
+    src: url(../../../public/HelveticaNowText-Light/HelveticaNowText-Bold.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(../../../public/HelveticaNowText-Light/HelveticaNowText-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Navbar {
+    transition: all .2s linear;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 105px;
+    background: rgb(25, 112, 72);
+    background: linear-gradient(294deg, rgba(25, 112, 72, 1) 0%, rgba(11, 62, 39, 1) 100%);
+
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #61BC92;
+}
+
+.menu h3 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.closecon {
+    cursor: pointer;
+}
+
+.logo {
+    height: 40%;
+}
+
+.logo img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.IconContainer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.iconBox {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.findtext h1 a {
+    font-size: 19px;
+}
+
+.visible {
+    height: 100vh;
+    width: 100%;
+    background: rgb(25, 113, 72);
+    background: linear-gradient(294deg, rgba(25, 112, 72, 1) 0%, rgba(11, 62, 39, 1) 100%);
+    color: white;
+    transition: all .5s linear;
+}
+
+.visiblemenu {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.visiblelogo {
+    height: 45%;
+}
+
+.visiblelogo img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.closecon {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closecon:hover {
+    color: #61BC92;
+}
+
+.language {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watchContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.Watchmaking {
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+
+
+}
+
+/* .Watchmaking {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.Watchmaking .container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: bold;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Watchmaking .container h1 a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.Watchmaking .container h1 a:hover {
+    color: #61BC92;
+}
+
+
+.findtext {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.findtext h2 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: light;
+}
+
+.Watches {
+    height: 400px;
+    width: 500px;
+    display: flexbox;
+    right: 0;
+    bottom: 0px;
+    left: 10%;
+    top: 20%;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .IconContainer {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 4%;
+        padding-left: 10%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .Watchmaking .container h1 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: bold;
+    }
+
+    .Watchmaking {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Watches {
+
+        display: none;
+
+    }
+}

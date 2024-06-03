@@ -1,0 +1,95 @@
+.mainContainer {
+
+  height: 600px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+}
+
+.galleryCardContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+.galleryCardContainer img {
+
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+
+}
+
+.galleryCardDescContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  bottom: 20%;
+  left: 100px;
+  right: 0;
+
+}
+
+.galleryCardDescContainer h3 {
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.galleryCardDescContainer p {
+  width: 43%;
+  margin: 0;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn {
+  height: 40px;
+  width: 150px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  .galleryCardDescContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    bottom: 10%;
+    left: 10%;
+    right: 0;
+
+  }
+
+  .galleryCardDescContainer h3 {
+    margin: 0;
+    font-size: 2.3rem;
+    margin-bottom: 4px;
+    color: white;
+  }
+
+  .galleryCardDescContainer p {
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+
+}

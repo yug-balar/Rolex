@@ -1,0 +1,183 @@
+@font-face {
+    font-family: helveti;
+    src: url(../../../../public/HelveticaNowText-Light/HelveticaNowText-Bold.ttf);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background: rgb(5, 30, 36);
+    background: linear-gradient(155deg, rgba(5, 30, 36, 1) 0%, rgba(222, 219, 226, 1) 16%, rgba(114, 140, 162, 1) 28%, rgba(31, 56, 90, 1) 54%, rgba(255, 246, 218, 1) 73%, rgba(129, 117, 134, 1) 86%, rgba(8, 24, 46, 1) 100%);
+}
+
+.watchContainer1 {
+    /* background: rgb(196, 238, 238);
+    background: linear-gradient(347deg, rgba(196, 238, 238, 1) 0%, rgba(124, 165, 170, 1) 29%, rgba(56, 95, 104, 1) 50%, rgba(20, 57, 69, 1) 79%, rgba(15, 56, 69, 1) 100%); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    height: 100%;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.imgContainer {
+    height: 400px;
+    width: 500px;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 70%;
+}
+
+.decsContainer h2 {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: helveti;
+    color: white;
+}
+
+.decsContainer h3 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: helveti;
+    color: white;
+}
+
+.lineContainer {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .watchContainer1 {
+        /* background: rgb(196, 238, 238);
+    background: linear-gradient(347deg, rgba(196, 238, 238, 1) 0%, rgba(124, 165, 170, 1) 29%, rgba(56, 95, 104, 1) 50%, rgba(20, 57, 69, 1) 79%, rgba(15, 56, 69, 1) 100%); */
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .imgContainer {
+        height: 300px;
+        width: 300px;
+    }
+
+    .imgContainer img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainContainer {
+        display: flex;
+        gap: 50px;
+    }
+
+    .lineContainer {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .lineContainer img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .decsContainer h3 {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: helveti;
+        color: white;
+    }
+
+    .decsContainer h2 {
+        font-size: 30px;
+        font-weight: 900;
+        font-family: helveti;
+        color: white;
+    }
+
+    .imgContainer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .imgContainer img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .watchContainer1 {
+        /* background: rgb(196, 238, 238);
+    background: linear-gradient(347deg, rgba(196, 238, 238, 1) 0%, rgba(124, 165, 170, 1) 29%, rgba(56, 95, 104, 1) 50%, rgba(20, 57, 69, 1) 79%, rgba(15, 56, 69, 1) 100%); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 950px) {
+    .descContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .title {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: start;
+        display: flex;
+        /* background-color: red; */
+    }
+
+    .desc {
+        padding: 0px 20px;
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        font-size: 19px;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: blue; */
+    }
+
+    .title h1 {
+        font-family: bold;
+        font-size: 30px;
+        width: 69%;
+        font-weight: 600;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(#95B5D1, #455F7C);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

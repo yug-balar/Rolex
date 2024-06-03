@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Helvetica Now Text ';
+    src: url(../../../public/HelveticaNowText-Light/HelveticaNowText-Light.ttf);
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'Helvetica Now Text ';
+}
+
+.backContainer {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.backContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.share {
+    font-size: 15px;
+}
+
+.MainContainer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 82px;
+    background-color: white;
+}
+
+.shareContainer {
+    height: 100%;
+    width: 60%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.shareicon {
+    display: flex;
+    gap: 30px;
+    color: #006039;
+    font-size: 20px;
+}
+
+.footermain {
+    display: flex;
+    gap: 80px;
+    background-color: white;
+
+}
+
+.logo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.Footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+
+}
+
+.main {
+    display: flex;
+    gap: 80px;
+    background-color: white;
+}
+
+.footer3 {
+    display: flex;
+    gap: 30px;
+}
+
+.rolexwatch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rolexwatch div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rolexwatch h1 {
+    font-weight: 900;
+    font-size: 22.5375px;
+    cursor: pointer;
+    transition: all .3s linear;
+
+}
+
+.rolexwatch h3 {
+    font-family: 'Helvetica Now Text ';
+    font-weight: 600;
+    font-size: 15.1351px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.rolexwatch h3:hover {
+    color: rgb(0, 96, 57);
+}
+
+.rolexwatch h1:hover {
+    color: #006039;
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main {
+        display: flex;
+        background-color: white;
+        gap: 0px;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .footermain {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+
+    .shareContainer {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .MainContainer {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        gap: 0px;
+    }
+
+    .rolexwatch h1 {
+        font-weight: 900;
+        font-size: 20px;
+        display: flex;
+
+    }
+
+    .rolexwatch h3 {
+        font-family: 'Helvetica Now Text ';
+        font-weight: 600;
+        font-size: 13px;
+        color: rgb(0, 0, 0);
+    }
+
+    .shareicon {
+        color: #006039;
+        font-size: 15px;
+        gap: 20px;
+    }
+
+    .shareContainer {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MainContainer {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        background-color: transparent;
+    }
+
+
+}
